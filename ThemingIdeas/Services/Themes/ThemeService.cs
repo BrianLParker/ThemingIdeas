@@ -45,7 +45,7 @@ namespace ThemingIdeas.Services.Themes
 
             themeDictionary["Content"] = new Dictionary<string, object>
                 {
-                    { "class", "flex-fill" }
+                    { "class", "flex-fill d-flex flex-column" }
                 };
 
             //"Content" => new Dictionary<string, object>(),

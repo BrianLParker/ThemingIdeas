@@ -1,31 +1,37 @@
 ﻿
-<div class= "fx-fill scene-body shadow">
-    <div class="scene">
-        <div class="floor"></div>
-        <div class="cube">
-            <div class="front"></div>
-            <div class="back"></div>
-            <div class="left"></div>
-            <div class="right"></div>
-            <div class="top">
-                <div class="ballShadow"></div>
+<div class= "h-100 w-100 d-flex flex-column">
+    <div class="flex-fill  d-flex flex-column">
+        <div class="scene-body">
+            <div class="scene">
+                <div class="floor"></div>
+                <div class="cube">
+                    <div class="front"></div>
+                    <div class="back"></div>
+                    <div class="left"></div>
+                    <div class="right"></div>
+                    <div class="top">
+                        <div class="ballShadow"></div>
+                    </div>
+                </div>
+                <div class="ball"></div>
             </div>
-@*            <div class="bottom"></div>
-*@        </div>
-        <div class="ball"></div>
+        </div>
+    </div>
+    <div class="d-flex flex-row p-3">
+        <input class="form-control col-2 mr-3" type="color" id="favcolor" name="favcolor" value="#ff0000">
+        <input class="form-control col-2" type="color" id="favcolor" name="favcolor" value="#ff0000">
     </div>
 </div>
 
-
-
 <style>
 
-    :root {
-        --boxColor: #0ff7;
+   :root {
+        --boxColor: #FF07;
         --rotateSpeed: 10s;
         --bounceSpeed: 1.5s;
-        --ballColor: white;
+        --ballColor: magenta;
         --sceneColor: #000;
+        --viewHeight: 3em;
     }
 
     .scene-body {
@@ -38,9 +44,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 75px;
+        font-size: 70px;
         perspective: 10em;
-        perspective-origin: 50% calc(50% - 3em);
+        perspective-origin: 50% calc(50% - var(--viewHeight));
     }
 
     .scene {
