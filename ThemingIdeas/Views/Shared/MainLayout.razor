@@ -1,17 +1,17 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
+<DivBase Theme="AppBackground">
+    <DivBase Theme="SideBar">
         <NavMenu />
-    </div>
+    </DivBase>
 
-    <div class="main">
-        <div class="top-row px-4">
+    <DivBase Theme="Main">
+        <DivBase Theme="TopRow">
             <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
-        </div>
+        </DivBase>
 
-        <div class="content px-4">
+        <DivBase Theme="Content">
             @Body
-        </div>
-    </div>
-</div>
+        </DivBase>
+    </DivBase>
+</DivBase>

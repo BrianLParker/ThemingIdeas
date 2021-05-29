@@ -20,8 +20,32 @@ namespace ThemingIdeas.Services.Themes
         {
             themeDictionary["Background"] = new Dictionary<string, object>
                 {
-                    { "class", "text-dark" },
-                    { "style", "background-color: orange" }
+                    { "class", "text-dark d-flex flex-column" }
+                };
+
+            themeDictionary["AppBackground"] = new Dictionary<string, object>
+                {
+                    { "class", "page" },
+                };
+
+            themeDictionary["SideBar"] = new Dictionary<string, object>
+                {
+                    { "class", "sidebar" }
+                };
+
+            themeDictionary["Main"] = new Dictionary<string, object>
+                {
+                    { "class", "flex-fill d-flex flex-column" }
+                };
+
+            themeDictionary["TopRow"] = new Dictionary<string, object>
+                {
+                    { "class", "top-row px-4" }
+                };
+
+            themeDictionary["Content"] = new Dictionary<string, object>
+                {
+                    { "class", "flex-fill" }
                 };
 
             //"Content" => new Dictionary<string, object>(),
